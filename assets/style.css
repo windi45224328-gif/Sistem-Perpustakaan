@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Styling Sidebar */
+[data-testid="stSidebar"] {
+    background-color: #ffffff;
+    border-right: 1px solid #e5e7eb;
+}
+[data-testid="stSidebarNav"] {
+    display: none;
+}
+
+/* Logo */
+.logo-container {
+    padding: 10px 20px 30px 20px;
+    font-size: 24px;
+    font-weight: 800;
+    color: #1e3a8a;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.logo-icon {
+    font-size: 28px;
+}
+
+/* Kategori Menu */
+.menu-kategori {
+    font-size: 11px;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    padding-left: 16px;
+}
+
+/* Tombol Menu Custom */
+.stButton > button {
+    width: 100%;
+    background-color: transparent !important;
+    border: none !important;
+    text-align: left !important;
+    padding: 9px 16px !important;
+    color: #334155 !important;
+    font-size: 14px !important;
+    border-radius: 5px !important;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: flex-start;
+}
+.stButton > button:hover {
+    background-color: #f1f5f9 !important;
+}
+/* Menu Aktif */
+.menu-active > button {
+    background-color: #eaf0f7 !important;
+    border-left: 4px solid #1e3a8a !important;
+    color: #1e3a8a !important;
+    font-weight: 600 !important;
+}
+
+/* Kartu Dashboard */
+.kartu{border-radius:8px;padding:16px 18px;background:#fff;
+border:1px solid #e2e8f0;border-left:4px solid #1e3a8a;box-shadow:0 1px 3px rgba(15,23,42,.05);margin-bottom:10px}
+.kartu .angka{font-size:26px;font-weight:700;color:#111827}
+.kartu .label{font-size:13px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px}
+
+/* Kotak Bukti */
+.bukti-box{border:1px solid #cbd5e1;border-radius:8px;padding:20px;background:#f8fafc}
+.bukti-box h3{margin:0 0 10px 0;color:#1e3a8a}
+.bukti-box table{width:100%;font-size:14px}
+.bukti-box td{padding:4px 6px}
+.bukti-box td:first-child{width:35%;color:#6b7280}
+
+@media print{.no-print{display:none!important}.bukti-box{border:1px solid #000;background:#fff}}
